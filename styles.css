@@ -2,11 +2,7 @@ html{
 	font-size:100%;
 	height:100%;
 	width:100%;
-	
-	
 }
-
-
 body{
 	margin:0;
 	padding:0;
@@ -15,29 +11,21 @@ body{
 	font-family:'Josefin Sans', sans-serif;
 	font-size:1.125rem;
 }
-
-header{
-	
+header{	
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:top center;
 	height:12rem;
 	transition:all 2s ease-in-out;
-	
-	
 }
 .light{
 	background-image:url('images/bg-mobile-light.jpg');
-
-	
 }
 .dark{
 	background-image:url('images/bg-mobile-dark.jpg');
 }
 .header-top{
 	position:relative;
-	
-	
 }
 .title{
 	color:hsl(0, 0%, 98%);
@@ -54,9 +42,6 @@ header{
 	position:absolute;
 	top:2rem;
 	right:2rem;
-	
-	
-	
 }
 
 /*input*/
@@ -69,8 +54,6 @@ header{
 	border-radius:5px;
 	transition:all 2s ease-in-out;
 }
-
-
 input{
 	color:hsl(235, 19%, 35%);
 	background:hsl(0, 0%, 98%);
@@ -81,8 +64,6 @@ input{
 }
 input:focus{
 	outline:none;
-	
-	
 }
 .light-text{
 	color:hsl(235, 19%, 35%);
@@ -92,13 +73,10 @@ input:focus{
  }
 .dark-text{
 	color:hsl(234, 39%, 85%);
-	
 }
 .dark-text::placeholder {
     color: hsl(234, 11%, 52%);
  }
-
-
 .add-btn{
 	background-color:transparent;
 	height: 1.5rem;
@@ -110,14 +88,9 @@ input:focus{
 	cursor:pointer;
 	transition:all 2s ease-in-out;
 }
-
 .add-btn:focus, .add-btn:active{
 	outline:none;
-	
-	
 }
-
-
 .container{
 	background-color:hsl(236, 33%, 92%);
 	height:calc(100% - 12rem);
@@ -125,11 +98,8 @@ input:focus{
 	/* animation-duration:3s; */
 	transition:all 2s ease-in-out;
 }
-
 /*todos*/
-
 .todo-list{
-	
 	position:relative;
 	top:-2rem;
 	width:90%;
@@ -137,9 +107,7 @@ input:focus{
 	padding:0;
 	border-radius:5px;
 	transition:all 2s ease-in-out;
-	
 }
-
 .new-item{
 	color:hsl(235, 19%, 35%);
 	position:relative;
@@ -151,10 +119,7 @@ input:focus{
 	transition:all 2s ease-in-out;
 	cursor:pointer;
 }
-
-
 .check-btn{
-	
 	position:absolute;
 	top:.85rem;
 	left:2em;
@@ -168,16 +133,11 @@ input:focus{
 	transition:all 2s ease-in-out;
 	cursor:pointer;
 }
-
 .check-btn:hover{
-	
-	
 	border-radius:50%;
-	
 	background-image:linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
-	background-size:cover;
-	
-	}
+	background-size:cover;	
+}
 .check-btn:hover:after{
 	background-color:hsl(0, 0%, 98%);
 	height:1.3rem;
@@ -187,7 +147,6 @@ input:focus{
 	top:5%;
 	left:5%;
 	border-radius:50%;
-	
 }
 .btn-select{
 	color: hsl(233, 11%, 84%);
@@ -196,15 +155,9 @@ input:focus{
 	background-repeat:no-repeat;
 	cursor:pointer;
 }
-
-
-
-.list-select{
-	
+.list-select{	
 	text-decoration:line-through;
-	
 }
-
 .delete-btn{
 	background-image:url('images/icon-cross.svg');
 	background-size:cover;
@@ -217,44 +170,31 @@ input:focus{
 	width:1rem;
 	transition:all 2s ease-in-out;
 	cursor:pointer;
-	
 }
-
 /*dark/light mode change*/
-.light-todo-list{
-	
+.light-todo-list{	
 	background-color:hsl(0, 0%, 98%);
-	
 }
-
-
 .dark-todo-list{
 	background-color:hsl(235, 24%, 19%);
 	border-radius:5px;
 	overflow:hidden;
 }
-
-
 .dark-todo-list > li{
 	color:hsl(234, 39%, 85%);
 	background-color:hsl(235, 24%, 19%);
 	border-bottom:1px solid hsl(237, 14%, 26%);
-	
 }
 .dark-todo-list > li.list-select{
-	color:hsl(237, 14%, 26%);
-	
-	
+	color:hsl(237, 14%, 26%);	
 }
 .dark-todo-list > li > .check-btn{
 	background-color:hsl(235, 24%, 19%);
 	border:1px solid hsl(234, 11%, 52%);
-	
 }
 .dark-todo-list > li > .check-btn:hover:after{
 	background-color:hsl(235, 24%, 19%);
 }
-
 /*task select*/
 
 .task-select{
@@ -278,7 +218,6 @@ input:focus{
 }
 .task-select >.items-left:hover, .task-select >.clear-all:hover{
 	color:hsl(235, 19%, 35%);
-	
 }
 .task-select-box{
 	background: hsl(0, 0%, 98%);
@@ -298,12 +237,9 @@ input:focus{
 }
 .task-select-box >div:hover{
 	color:hsl(235, 19%, 35%);
-	
 }
-
 .blueColor{
 	color:hsl(220, 98%, 61%);
-	
 }
 .dark-task-select{
 	 color: hsl(234, 11%, 52%);
@@ -311,55 +247,38 @@ input:focus{
 }
 .dark-task-select >.task-select-box > div:hover{
 	color:hsl(236, 33%, 92%);
-	
 }
 .dark-task-select >.items-left:hover, .dark-task-select >.clear-all:hover{
 	color:hsl(236, 33%, 92%);
 }
 .dark-task-select > .task-select-box{
 	background-color:rgb(37, 39, 60);
-	
 }
-.light-task-select{
-	
-	
-}
-
 .task-select >.items-left, .task-select >.clear-all{
 	color:hsl(236, 9%, 61%);
 	font-size:.95rem;
 	font-weight:400;
 }
-
 .dark-task-select >.items-left, .dark-task-select >.clear-all{
 	color:hsl(234, 11%, 52%);
 }
-
-
 .drag-drop{
 	color: hsl(236, 9%, 61%);
 	font-size:1rem;
 	margin-top:8rem;
-	text-align:center;
-	
-	
+	text-align:center;	
 }
-
 .attribution{
 	color: hsl(236, 9%, 61%);
 	padding-top:8rem;
 }
-@media(min-width:700px){
-	
-	
+@media(min-width:700px){	
 	header{
 		background-image:url('images/bg-desktop-light.jpg');
 		height:15rem;
 	}
 	.light{
-	background-image:url('images/bg-desktop-light.jpg');
-
-	
+		background-image:url('images/bg-desktop-light.jpg');	
 }
 	.dark{
 		background-image:url('images/bg-desktop-dark.jpg');
@@ -367,17 +286,13 @@ input:focus{
 	.header-top{
 		top:2rem;
 		max-width:550px;
-		margin: auto;
-		
-		
+		margin: auto;		
 	}
 	.todo-input{
-		
 		max-width:518px;
 		margin-top:2rem;
 	}
 	.task-select{
-		
 		max-width:518px;
 		width:100%;
 	}
@@ -394,26 +309,18 @@ input:focus{
 	}
 	.items-left{
 		width:25%;
-		text-align:left;
-		
+		text-align:left;	
 	}
 	.clear-all{
 		width:25%;
 		text-align:right;
-		
-	}
-	.task-select-box > div{
-		
 	}
 	.container{
 		height:100%;
 	}
 	.todo-list{
-		max-width:550px;
-		
-		
-	}
-	
+		max-width:550px;		
+	}	
 }
 
 

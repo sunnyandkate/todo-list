@@ -52,8 +52,6 @@ changeMode.addEventListener('click', function(){
 
 let todoList =document.querySelector('.todo-list');
 addBtn.addEventListener('click', function(){
-
-
 	let list = document.createElement('LI');
 	let userInput = inputField.value;
 	list.classList.add('new-item');
@@ -68,26 +66,20 @@ addBtn.addEventListener('click', function(){
 	let checkBtn= document.createElement('BUTTON');
 	checkBtn.classList.add('check-btn');
 	list.appendChild(checkBtn);
-	
-	
+		
 //click the check button
 	checkBtn.addEventListener('click', function(){
-	
-	
+		
 		this.classList.toggle('btn-select');
 		list.classList.toggle('list-select');
-		list.classList.toggle('list-active');
-	
+		list.classList.toggle('list-active');	
 });
-
 
 //create the delete button
 
 	let deleteBtn = document.createElement('SPAN');
 	deleteBtn.classList.add('delete-btn');
-
 	list.appendChild(deleteBtn);
-
 //remove list item
 
 	let delBtnAll= document.querySelectorAll('.delete-btn');
@@ -95,19 +87,15 @@ addBtn.addEventListener('click', function(){
 	for(let j=0;j<delBtnAll.length;j++){
 		
 		delBtnAll[j].addEventListener('click', function(){
-			
-			
+						
 			let btnList = this.parentElement;
 			btnList.classList.add('animate__animated', 'animate__fadeOut');
 			btnList.classList.remove('list-active');
 			setTimeout(() => {
 			btnList.style.display = "none";
 			}, 1000)
-		});
-
-	
+		});	
 	}
-
 
 //show all tasks
 let showAll = document.querySelector('.showAll');
@@ -117,28 +105,15 @@ showAll.addEventListener('click', function(){
 	complete.classList.remove('blueColor');
 	active.classList.remove('blueColor');
 	
-	if(list.textContent == ''){
-		
-		
+	if(list.textContent == ''){	
 		list.style.display='none';
 		
 	}else{
 		
-		list.style.display='block';
-		
-		
-	}
-	
-	
-	
-	
+		list.style.display='block';		
+		}	
 });
-	
-	
-	
-	
 //clear all completed tasks
-
 let clearAll = document.querySelector('.clear-all');
 
 clearAll.addEventListener('click', function(){
@@ -148,7 +123,6 @@ clearAll.addEventListener('click', function(){
 			list.remove();
 		}
 });
-
 //show only active tasks
 let active = document.querySelector('.active');
 
@@ -157,41 +131,33 @@ let active = document.querySelector('.active');
 		active.classList.add('blueColor');
 		showAll.classList.remove('blueColor');
 		complete.classList.remove('blueColor');
-		
-		
+			
 		if(list.classList.contains('list-select')){
-		
-		
-		list.style.display='none';
-				
+			
+		list.style.display='none';				
 	}else{
 		
-		list.style.display='block';
-		
+		list.style.display='block';	
 	}
 				
 	});
-
 
 //show only completed tasks
 let complete = document.querySelector('.complete');
 
 	complete.addEventListener('click', function(){
 
-	complete.classList.add('blueColor');
-	showAll.classList.remove('blueColor');
-	active.classList.remove('blueColor');
-	
-	if(list.classList.contains('list-select') == false){
+		complete.classList.add('blueColor');
+		showAll.classList.remove('blueColor');
+		active.classList.remove('blueColor');
 		
-		
-		list.style.display='none';		
-		
-	}else{
-		
-		list.style.display='block';
-		
-	}
+		if(list.classList.contains('list-select') == false){		
+			list.style.display='none';		
+			
+		}else{
+			
+			list.style.display='block';	
+		}
 	});
 
 //set list-active class to all active tasks	
@@ -201,27 +167,18 @@ let complete = document.querySelector('.complete');
 		
 	}else if(list.classList.contains('list-select') ){
 		
-		list.classList.remove('list-active');
-		
-	}
-	
-	
+		list.classList.remove('list-active');		
+	}	
 //count left items	
 let itemsLeft = document.querySelector('.items-left');
 
 itemsLeft.addEventListener('click', function(){
-		
-		
-	
-		
-let listActive = document.getElementsByClassName("list-active");
-let	count = listActive.length;
-itemsLeft.textContent= count + " items left";
-console.log(typeof count);
-});
-
-	
-	
+				
+	let listActive = document.getElementsByClassName("list-active");
+	let	count = listActive.length;
+	itemsLeft.textContent= count + " items left";
+	console.log(typeof count);
+	});
 });
 
 
