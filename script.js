@@ -1,4 +1,3 @@
-
 let changeMode = document.querySelector('.change-mode');
 let header = document.querySelector('.header');
 let cont = document.querySelector('.container');
@@ -49,12 +48,6 @@ changeMode.addEventListener('click', function(){
 	this.classList.add('animate__animated', 'animate__fadeIn');
 	
 });
-
-
-
-
-
-
 //grab the text from the input
 
 let todoList =document.querySelector('.todo-list');
