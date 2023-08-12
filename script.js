@@ -45,7 +45,7 @@ changeMode.addEventListener('click', function(){
 		
 	}
 	//header.classList.toggle('dark');
-	this.classList.add('animate__animated', 'animate__fadeIn');
+	
 	
 });
 //grab the text from the input
@@ -61,7 +61,7 @@ addBtn.addEventListener('click', function(){
 	
 	list.textContent = userInput;
 
-	list.classList.add('animate__animated', 'animate__fadeIn');
+	
 //add the check button
 	let checkBtn= document.createElement('BUTTON');
 	checkBtn.classList.add('check-btn');
@@ -89,7 +89,7 @@ addBtn.addEventListener('click', function(){
 		delBtnAll[j].addEventListener('click', function(){
 						
 			let btnList = this.parentElement;
-			btnList.classList.add('animate__animated', 'animate__fadeOut');
+			
 			btnList.classList.remove('list-active');
 			setTimeout(() => {
 			btnList.style.display = "none";
